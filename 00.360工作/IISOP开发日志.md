@@ -7,7 +7,7 @@
 redis密码：cloud@qihoo.com
 mysql：端口3399 用户名gwc 密码:gwc-2345
 
-本脑：admin/Q!hooS0c
+本脑：admin/Q!hooS0c1
 
 ## supervisor 配置文件地址
 
@@ -30,3 +30,20 @@ cat /opt/qihoo/soc/zookeeper/conf/zoo.cfg
 ## 安装包
 
 /opt/QihooSecBrain_Platform
+
+
+
+
+
+将本脑关联规则分发4个topic，web_attack_bn,host_bn,itd_bn,other_bn
+
+
+
+
+
+/root/iisop_send
+
+./iisop_product -t threat -a 10.99.99.195:9092
+
+
+
