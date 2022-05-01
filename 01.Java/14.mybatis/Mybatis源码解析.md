@@ -8,6 +8,7 @@
 + 生成Mapper代理
   + 通过MapperRegistry找到接口的代理工厂，由代理工厂创建Mapper代理
   + MapperProxyFactory创建实例化动态代理。引用MethodInvoker。
++ 结果映射：ResultSet接口主要构件Mapping的相关操作。负责对列的映射，Mapping的处理，嵌套查询的使用。映射主要基于反射实现，根据类的反射来获得值。lazyloader会通过动态代理创建select的方法
 
 
 ## DataSource
@@ -103,3 +104,5 @@ public class DBCPDataSourceFactory implements DataSourceFactory {
 [framework-learning/Mybatis源码分析.md at dev · guang19/framework-learning (github.com)](https://github.com/guang19/framework-learning/blob/dev/orm-learning/Mybatis源码分析.md)
 
 [MyBatis: 自定义连接池 - 乐天笔记 (letianbiji.com)](https://www.letianbiji.com/mybatis/mybatis-custom-conn-pool.html)
+
+[(40条消息) Mybatis源码解析——ResultSetHandler_Mutou_ren的博客-CSDN博客](https://blog.csdn.net/Mutou_ren/article/details/102794613)
