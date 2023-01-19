@@ -10,6 +10,14 @@ git push origin v1.4
 git tag -d v1.4
 # 删除远程标签
 git push origin :refs/tags/v1.4
+## 回退版本
+git reset --hard 
+## 删除没有add的文件
+git checkout -f
+## 退回上一次提交，
+git reset --soft HEAD~1
+## 撤销上次操作,提交有记录
+git revert HEAD
 ```
 
 ## config
