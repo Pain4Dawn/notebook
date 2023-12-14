@@ -64,6 +64,8 @@ MVCC时多版本控制，在创建事务时，对数据添加事务id，这样�
 + ReadCommited隔离级别：每次select 都生成一个快照读
 + ReadRepeatable：开启事务后第一个select语句才是快照读的地方，而不是一开启事务就快照都
 + RR级别下，快照读时通过MVVC（多版本控制）来实现，当前读时通过record lock（记录锁）和gap lock（间隙锁）来实现。
+可重复读不会完全解决幻读问题，RC无法解决幻读问题
+https://www.xiaolincoding.com/mysql/transaction/phantom.html#%E4%BB%80%E4%B9%88%E6%98%AF%E5%B9%BB%E8%AF%BB
 
 
 
